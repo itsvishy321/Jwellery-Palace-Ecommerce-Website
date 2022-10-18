@@ -1,0 +1,30 @@
+@import url(/css/general.css);
+@import url(/css/style.css);
+
+/* ***************************************** */
+/* ABOUT US*/
+/* ***************************************** */
+
+.about-us-banner {
+  position: relative;
+  max-width: 100%;
+  min-height: 3.2rem;
+  background-image: url(/img/about-us/banner.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  transition: all 0.3s;
+}
+
+.banner-text {
+  position: absolute;
+  top: 40%;
+  left: 12%;
+  transform: translate(-75%, -10%);
+  color: #fff;
+}
+
+.about-us .primary-heading {
+  border-bottom: 1px solid rgba(119, 119, 119, 0.575);
+}
