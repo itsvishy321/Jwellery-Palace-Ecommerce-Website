@@ -1,3 +1,3 @@
 # Jwellery-Palace-Ecommerce-Website
 
-Website Link : https://itsvishy321.github.io/Jwellery-Palace-Ecommerce-Website/
+Website Link : https://aesthetic-eclair-9fff36.netlify.app/
