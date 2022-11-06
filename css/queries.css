@@ -1,0 +1,154 @@
+/* rem and em do not depend on html font-size in media queries */
+/* 1rem = 1em = 16px */
+
+/* ******************************* */
+/* Below 1344px (Smaller desktops) */
+/* ******************************* */
+
+@media (max-width: 84em) {
+  .primary-heading h1 {
+    font-size: 4.4rem;
+  }
+}
+
+/* ******************************* */
+/* Below 1200px (landscape tablets) */
+/* ******************************* */
+
+@media (max-width: 75em) {
+  html {
+    /* 16px/9px */
+    font-size: 56.25%;
+  }
+
+  .secondary-heading {
+    font-size: 3.6rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+}
+
+/* ******************************* */
+/* Below 1060px (Tablets) */
+/* ******************************* */
+
+@media (max-width: 66em) {
+  .footer-heading {
+    font-size: 1.8rem;
+  }
+
+  .footer-link:link,
+  .footer-link:visited,
+  .footer p {
+    font-size: 1.4rem;
+  }
+
+  .location,
+  .call,
+  .mail {
+    font-size: 1.8rem;
+  }
+
+  .install .apps img {
+    width: 8rem;
+  }
+
+  .install #payment img {
+    width: 16rem;
+  }
+
+  #copyright {
+    font-size: 1.2rem;
+  }
+}
+
+/* ******************************* */
+/* Below 992px (Tablets) */
+/* ******************************* */
+
+@media (max-width: 62em) {
+  html {
+    /* 16px/9px/8px */
+    font-size: 50%;
+  }
+
+  .col-lg-4,
+  .col-md-6 {
+    max-width: 33%;
+  }
+
+  /* MOBILE NAVIGATION */
+
+  .btn-mobile-nav {
+    display: block;
+  }
+  .btn-mobile-nav:focus {
+    outline: none;
+  }
+
+  .main-nav {
+    background-color: rgba(15, 15, 15, 0.904);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateX(100%);
+    transition: all 0.3s ease-in;
+    /* HIDE NAVIGATION  */
+    /* ALLOWS NO ANIMATIONS */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboards */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+    scroll-behavior: smooth;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+    color: #aaa;
+  }
+
+  .main-nav-link:hover,
+  .main-nav-link:active {
+    color: #ffd700;
+  }
+}
