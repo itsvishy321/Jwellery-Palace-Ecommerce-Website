@@ -1,0 +1,79 @@
+/* ***************************************** */
+/* OUR MISSION */
+/* ***************************************** */
+
+.our-mission {
+  padding: 6.4rem 0;
+  text-align: center;
+}
+
+.our-mission-text {
+  font-size: 2.2rem;
+  line-height: 1.6;
+}
+
+/* ***************************************** */
+/* ABOUT FOUNDER */
+/* ***************************************** */
+
+.founder,
+.our-vision {
+  background-color: #fce199;
+  padding: 4.4rem;
+}
+
+.origin {
+  padding: 4.4rem 0;
+}
+
+.about-item {
+  gap: 6.4rem;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+.item-photo {
+  width: 33rem;
+}
+
+.item-text {
+  align-self: center;
+}
+
+.about-item p {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  word-spacing: 2px;
+}
+
+.origin .about-item {
+  grid-template-columns: 3fr 1fr;
+}
+
+/* ******************************* */
+/* Below 704px (Tablets) */
+/* ******************************* */
+
+@media (max-width: 44em) {
+  .about-item {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+  .origin .about-item .item-photo {
+    grid-row: 1;
+  }
+  .about-item img {
+    justify-self: center;
+  }
+}
+
+/* ******************************* */
+/* Below 544px (Mobiles) */
+/* ******************************* */
+
+@media (max-width: 34em) {
+  .founder,
+  .our-vision {
+    padding: 4.4rem 0;
+  }
+}
