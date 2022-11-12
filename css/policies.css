@@ -1,0 +1,89 @@
+main {
+  background-color: #ccc;
+}
+
+.policies-section {
+  margin: 0 10rem;
+
+  padding: 7rem;
+}
+
+.policies-section details {
+  padding: 2rem 4rem;
+
+  background-color: #fff;
+  margin-bottom: 5rem;
+  border-radius: 5px;
+  transition: all 0.35s;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+details {
+  position: relative;
+}
+details:before,
+details:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+details:after {
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
+
+summary {
+  font-size: 2.4rem;
+  list-style: none;
+  font-weight: 500;
+}
+
+details summary::before {
+  content: "➔";
+  color: #e9c600;
+  margin-right: 1.8rem;
+
+  /* you can style it however you want, use background-image for example */
+}
+
+/* By using [open] we can define different styles when the disclosure widget is open */
+details[open] summary::before {
+  content: "🡻";
+  color: #e9c600;
+}
+
+details:first-child {
+  margin-top: 10rem;
+}
+
+details h3 {
+  font-size: 1.8rem;
+  margin-top: 1.8rem;
+  margin-left: 3.6rem;
+}
+
+details p {
+  font-size: 1.6rem;
+  margin: 2.4rem 3.6rem;
+  margin-top: 1rem;
+  line-height: 1.4;
+}
