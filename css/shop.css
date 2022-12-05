@@ -144,6 +144,11 @@
 
 /* media Queries*/
 @media screen and (max-width: 34em) {
+  .search-bar input {
+    padding-left: 7.6rem;
+    font-size: 2rem;
+  }
+  
   .pro {
     width: 20rem;
   }
