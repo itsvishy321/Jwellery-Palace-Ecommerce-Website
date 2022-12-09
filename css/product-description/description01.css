@@ -1,0 +1,118 @@
+/* Product Description */
+
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 4rem;
+
+  align-items: flex-start;
+  color: #eee;
+  gap: 5rem;
+}
+
+.single-pro-image {
+  width: 40rem;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.img-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.img-col {
+  flex-basis: 23%;
+  cursor: pointer;
+  opacity: 75%;
+  transition: all 0.25s ease;
+}
+
+.img-col:hover {
+  opacity: 1;
+}
+
+.single-pro-details {
+  padding: 30px;
+}
+
+.single-pro-details .women-jewllery {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  word-spacing: 0.5rem;
+}
+
+.single-pro-details h2 {
+  margin-top: 5rem;
+  font-size: 2.4rem;
+}
+
+.single-pro-details ul {
+  margin-top: 2rem;
+  list-style: disc;
+  padding-left: 1.8rem;
+  line-height: 1.8;
+  font-size: 1.6rem;
+  color: #aaa;
+}
+
+.product-form {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  gap: 2rem;
+}
+
+.product-form label {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.product-form input,
+.product-form select {
+  cursor: pointer;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-family: inherit;
+  border: none;
+  color: #555;
+  border-radius: 0px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.3rem rgba(255, 217, 0, 0.37) !important;
+  transition: all 0.3s ease;
+}
+
+.product-form .btn {
+  border: none;
+  padding: 1.4rem 2.8rem;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.product-form .btn:hover {
+  color: #ffd700;
+}
+
+/* *************Featured Products************** */
+
+.section-featured {
+  text-align: center;
+  margin: 0;
+}
+
+.featured-heading {
+  margin: 15rem 0 5rem 0;
+  color: #eee !important;
+}

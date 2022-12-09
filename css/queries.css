@@ -1,0 +1,255 @@
+/* rem and em do not depend on html font-size in media queries */
+/* 1rem = 1em = 16px */
+
+/* ******************************* */
+/* Below 1344px (Smaller desktops) */
+/* ******************************* */
+
+@media (max-width: 84em) {
+  .primary-heading h1 {
+    font-size: 4.4rem;
+  }
+}
+
+/* ******************************* */
+/* Below 1200px (landscape tablets) */
+/* ******************************* */
+
+@media (max-width: 75em) {
+  html {
+    /* 16px/9px */
+    font-size: 56.25%;
+  }
+
+  .secondary-heading {
+    font-size: 3.6rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+}
+
+/* ******************************* */
+/* Below 1060px (Tablets) */
+/* ******************************* */
+
+@media (max-width: 66em) {
+  .footer-heading {
+    font-size: 1.8rem;
+  }
+
+  .footer-link:link,
+  .footer-link:visited,
+  .footer p {
+    font-size: 1.6rem;
+  }
+
+  .location,
+  .call,
+  .mail {
+    font-size: 1.8rem;
+  }
+
+  .install .apps img {
+    width: 8rem;
+  }
+
+  .install #payment img {
+    width: 16rem;
+  }
+
+  #copyright {
+    font-size: 1.2rem;
+  }
+}
+
+/* ******************************* */
+/* Below 992px (Tablets) */
+/* ******************************* */
+
+@media (max-width: 62em) {
+  html {
+    /* 16px/9px/8px */
+    font-size: 50%;
+  }
+
+  .col-lg-4,
+  .col-md-6 {
+    max-width: 33%;
+  }
+
+  /* MOBILE NAVIGATION */
+
+  .btn-mobile-nav {
+    display: block;
+  }
+  .btn-mobile-nav:focus {
+    outline: none;
+  }
+
+  .main-nav {
+    background-color: rgba(15, 15, 15, 0.6);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateX(100%);
+    transition: all 0.3s ease-in;
+    /* HIDE NAVIGATION  */
+    /* ALLOWS NO ANIMATIONS */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboards */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+    scroll-behavior: smooth;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+    color: #eee;
+  }
+
+  .main-nav-link:hover,
+  .main-nav-link:active {
+    color: #ffd700;
+  }
+
+  #news-letter {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 52em) {
+  .footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .col-logo,
+  .install {
+    grid-column: span 3;
+    grid-row: 2;
+  }
+
+  .contact,
+  .about,
+  .account {
+    grid-column: span 2;
+  }
+}
+
+/* ******************************* */ /* Below 704px (tablets) */ /* ******************************* */
+@media (max-width: 44em) {
+  .slider_black .slider_content h1 {
+    font-size: 6.2rem;
+  }
+
+  .slider_black .slider_content .slider_price {
+    font-size: 2.4rem;
+  }
+
+  .btn-grad:link,
+  .btn-grad:visited {
+    font-size: 1.8rem;
+    padding: 2rem 4.4rem;
+  }
+
+  .footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .policies-section {
+    padding: 4rem 0 !important;
+  }
+}
+
+@media (max-width: 44em) and (min-width: 34em) {
+  .banner_black .banner_content {
+    font-size: 1.4rem;
+  }
+
+  .banner_black .banner_content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* ******************************* */
+/* Below 544px (Mobiles) */
+/* ******************************* */
+
+@media (max-width: 34em) {
+  .container {
+    padding: 0 1.2rem;
+  }
+
+  .banner_black .row {
+    flex-direction: column;
+  }
+
+  .col-lg-4,
+  .col-md-6 {
+    max-width: 70%;
+  }
+
+  .install .apps {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .install #payment img {
+    width: 18rem;
+  }
+
+  .policies-section {
+    padding: 4rem 0 !important;
+    margin-top: 4rem !important;
+    margin-left: 4rem !important;
+    margin-right: 4rem !important;
+  }
+
+  details {
+    padding: 2rem !important;
+  }
+}
